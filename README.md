@@ -35,9 +35,9 @@
     - status `notsent`: DM was not posted because it does not contain the trigger word.
     - status `wrong attachment`: DM was not posted because it contains uploaded attachment other than photo.
 5. Deletes the incoming DMs once they are posted. You can still see the content of the original DM from the link in the notification message you send back to the sender. Optional: you can also delete the notification DM you've just sent by uncommenting this line in `senddm` method.
-```
-#api.destroy_direct_message(int(notifdm.id))
-```
+    ```
+    #api.destroy_direct_message(int(notifdm.id))
+    ```
 6. Makes a log for each run into `test.log` file.
 
 ## What do you need
@@ -46,16 +46,16 @@
 
 ## How to run this
 1. If you have git installed, clone this in your directory. If not, just download the ZIP file.
-  ```
-  git clone https://github.com/azukacchi/twitter_autobase.git
-  ```
+    ```
+    git clone https://github.com/azukacchi/twitter_autobase.git
+    ```
 2. Install the required packages (or check `requirements.txt` to install each package separately).
-  ```
-  pip install -r requirements.txt
-  ```
+    ```
+    pip install -r requirements.txt
+    ```
 3. Set the required fields in `config.py`:
-  - Put the keys and tokens you get from your Twitter developer account.
-  - Set your timezone and the trigger word you want to use.
+    - Put the keys and tokens you get from your Twitter developer account.
+    - Set your timezone and the trigger word you want to use.
 4. Modify the notification message as you wish in the `senddm()` method.
 
 ## How do I automate the script
