@@ -6,20 +6,26 @@
 ## Features
 1. Posts incoming DM that contains the trigger word.
 2. Posts incoming DM with media. Three ways of sending a post containing media through DM:
-    - Upload your own image with the text you want to add. However, DM will not be sent if it contains uploaded attachment other than photos (example: GIF/video). The result is something like [this](https://drive.google.com/file/d/1tCjVQk4uCh2FIaDPrOE5AUJhO6WlnCSS/view?usp=sharing).
+    - Upload your own image with the text you want to add. However, DM will not be sent if it contains uploaded attachment other than photos (example: GIF/video). The result is something like this.
+    ![upload image](https://dev-to-uploads.s3.amazonaws.com/i/ir46br3cx7k86hvtuu3q.jpg)
     - Embed images/gif/video from an existing tweet by copy-pasting the link contained in a tweet with images/gif/video. Example: to embed the image from this [tweet](https://twitter.com/timeto_haechan/status/1300093500810170370), copy the text and take only the link.
     The text would be something like this:
-    ```
-    190831 인천 스카이 페스티벌 #NCTDREAM #NCT #해찬 #HAECHAN https://pic.twitter.com/r97xH3s15X
-    ```
-    Take only the link and paste it into the DM along with the text you want to add and the trigger word like below. The result is something like [this](https://drive.google.com/file/d/1tJ6b8NHsfNM_kzFhB4FYXUk5knDd5emn/view?usp=sharing).
-    ```
-    your text hereeeeee lorem ipsum triggerword https://pic.twitter.com/r97xH3s15
-    ```
-   - To submit a quote-RT of a tweet, simply insert the link of the tweet. The result is something like [this](https://drive.google.com/file/d/1tDqtJmgUpRPbyVhwSlF_GeQ03sSV289u/view?usp=sharing).
-    ```
-    this is going to be sent as a quote-RT your text hereeeee triggerword https://twitter.com/timeto_haechan/status/1300093500810170370
-    ```
+      ```
+      190831 인천 스카이 페스티벌 #NCTDREAM #NCT #해찬 #HAECHAN https://pic.twitter.com/r97xH3s15X
+      ```
+      Take only the link and paste it into the DM along with the text you want to add and the trigger word like below. 
+      ```
+      your text hereeeeee lorem ipsum triggerword https://pic.twitter.com/r97xH3s15
+      ```
+      The result is something like this.
+      ![embed image](https://dev-to-uploads.s3.amazonaws.com/i/34zymz28b8uey2mpehl7.jpg)
+   - To submit a quote-RT of a tweet, simply insert the link of the tweet.
+      ```
+      this is going to be sent as a quote-RT your text hereeeee triggerword https://twitter.com/timeto_haechan/status/1300093500810170370
+      
+      ```
+      The result is something like this.
+      ![quote rt](https://dev-to-uploads.s3.amazonaws.com/i/1nkyckowe9t1ysyhy5ho.jpg)
 
 3. Cuts post longer than 280 characters and posts them as a thread. The result is something like [this](https://drive.google.com/file/d/1tNN0bW0QglARMCdUH1TAskUTtAztZjZ1/view?usp=sharing).
 
