@@ -121,7 +121,7 @@ class TwitterBot:
           api.update_status(tweet, in_reply_to_status_id = complete, auto_populate_reply_metadata = True)
                   
         self.senddm(i, dmsender, status='sent', postid=postid, rttime=rttime)
-        #api.destroy_direct_message(int(dm.id))
+        api.destroy_direct_message(int(dm.id))
         logging.info('Finished.')
         time.sleep(60+random.randrange(0,60,15))
       
@@ -180,6 +180,14 @@ class TwitterBot:
           continue
     return
   
+  def delete_all(self, dms):
+    api = self.api
+    for dm in dms:
+      try: api.destroy_direct_message(dm.id)
+      except tweepy.error.TweepError as e:
+          logging.error(e)
+          continue
+    return  
     
   def __str__(self):
     logging.info(f"DM counts: {self.checked}, DM posted: {self.posted}, DM not sent: {self.notsent}")
