@@ -64,5 +64,8 @@ You can use Task Scheduler on Windows (open Start then search Task Scheduler) to
 ## Notes
 This bot is not suitable for a big autobase account. The `checkdm()` method only checks the DM to your bot account, without saving the tweets to a dabatase. Then this bot will post the incoming DM as soon as it runs the `post_all()` method, with a certain time span between the tweets to avoid Twitter API rate limits. To run a big autobase account with higher posts rate, coming from higher followers counts, such as [@collegemenfess](https://twitter.com/collegemenfess) with 500K+ followers, you'll need to check the dm more often and you'll need a database that enables you to store the incoming DM and post them later.
 
+## Update 2020-12-02
+For some reason, you cannot run this bot when you're connected to VPN. You won't be able to initiate `TwitterBot()` and it will give out errors such as `socket.timeout: The read operation timed out`.
+
 ## Questions
-I've just started this as a new hobby during pandemic, if you have any questions feel free to reach me on Twitter ahah :relaxed:
+I've just started this as a new hobby during this pandemic, if you have any questions feel free to reach me on Twitter ahah :relaxed:
