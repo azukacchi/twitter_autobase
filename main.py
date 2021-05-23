@@ -127,6 +127,7 @@ class TwitterBot:
       
       else:
         self.senddm(i, dmsender, status='notsent')
+        api.destroy_direct_message(int(dm.id))
         notsent +=1
     self.posted = posted
     self.checked = len(dms)
